@@ -1,0 +1,36 @@
+{
+    "name": "nazka/payable-bundle",
+    "type": "symfony-bundle",
+    "description": "Ease payments controll for doctrine entities",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Javier Sampedro",
+            "email": "jsampedro77@gmail.com",
+            "homepage": "http://sampedrobcn.es"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+
+        "symfony/framework-bundle":        "~2.3"
+    },
+    "require-dev": {
+        "doctrine/orm":      "~2.2",
+        "symfony/form":      "~2.3",
+        "symfony/validator": "~2.3"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-0": { "Nazka\\PayableBundle": "" }
+    },
+    "target-dir": "Nazka/PayableBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
