@@ -1,0 +1,7 @@
+parameters:
+#    nazka_payable.example.class: Nazka\PayableBundle\Example
+
+services:
+#    nazka_payable.example:
+#        class: %nazka_payable.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

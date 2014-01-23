@@ -1,0 +1,3 @@
+nazka_payable_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: NazkaPayableBundle:Default:index }
