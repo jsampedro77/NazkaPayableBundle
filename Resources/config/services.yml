@@ -1,7 +1,7 @@
 parameters:
-#    nazka_payable.example.class: Nazka\PayableBundle\Example
+    nazka_payable.manager.class: Nazka\PayableBundle\Manager\PayableManager
 
 services:
-#    nazka_payable.example:
-#        class: %nazka_payable.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    nazka_payable.manager:
+        class: %nazka_payable.manager.class%
+        lazy: true

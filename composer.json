@@ -21,9 +21,6 @@
         "symfony/form":      "~2.3",
         "symfony/validator": "~2.3"
     },
-    "config": {
-        "bin-dir": "bin"
-    },
     "autoload": {
         "psr-0": { "Nazka\\PayableBundle": "" }
     },
