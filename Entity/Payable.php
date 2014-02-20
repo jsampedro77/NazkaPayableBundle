@@ -52,7 +52,7 @@ class Payable
 
     public function getPaidImport()
     {
-        $paid = 0;
+        $paid = 0.00;
         foreach ($this->getPayments() as $payment) {
             $paid += $payment->getImport();
         }
