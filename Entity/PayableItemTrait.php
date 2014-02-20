@@ -4,13 +4,12 @@ namespace Nazka\PayableBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
-
 /**
  * Description of payableItemInterface
  *
  * @author Javier Sampedro <jsampedro77@gmail.com>
  */
-trait PayableItemTrait 
+trait PayableItemTrait
 {
 
     /**
@@ -24,7 +23,7 @@ trait PayableItemTrait
         if (!$this->payable) {
             $this->setPayable(new Payable());
         }
-        
+
         return $this->payable;
     }
 
@@ -61,6 +60,11 @@ trait PayableItemTrait
         return $this->getPayable()->getRemainingImport();
     }
 
+    public function getPaidImport()
+    {
+        return $this->getPayable()->getPaidImport();
+    }
+    
     /* alias to getImport */
 
     public function getPrice()

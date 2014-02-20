@@ -36,28 +36,28 @@ class Payable
     private $payable_import = 0.00;
 
     /**
-     * Get is_payed
+     * Get is_paid
      *
      * @return boolean
      */
-    public function isPayed()
+    public function isPaid()
     {
         return !($this->getRemainingImport() > 0);
     }
 
     public function getRemainingImport()
     {
-        return $this->getPayableImport() - $this->getPayedImport();
+        return $this->getPayableImport() - $this->getPaidImport();
     }
 
-    public function getPayedImport()
+    public function getPaidImport()
     {
-        $payed = 0;
+        $paid = 0;
         foreach ($this->getPayments() as $payment) {
-            $payed += $payment->getImport();
+            $paid += $payment->getImport();
         }
 
-        return $payed;
+        return $paid;
     }
 
     /**
